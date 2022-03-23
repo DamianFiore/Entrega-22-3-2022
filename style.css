@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.seccion1{
+    background-image: url(./Imagenes/Imagen-seccion-1.jpg);
+    background-size:cover;
+    width: 100%;
+    height: 1000px;
+}
+.hdr{
+    display: grid;
+    grid-template-columns: 700px 400px 500px;
+    grid-template-rows: 200px 200px 350px 250px;
+    grid-template-areas: 
+                        "logo nav nav"
+                        "nombre nav nav"
+                        "granos frase frase"
+                        "frase2 frase frase";
+}
+form{
+    padding-left: 550px;
+    padding-right: 550px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: blanchedalmond;
+}
+.main-c{
+    background-image: url(./Imagenes/pexels-anna-tis-6744106.jpg);
+    background-size: cover;
+}
+section#imagenes{
+    margin-left: 21px;
+    display: flex;
+    gap: 15px;
+}
+.main-g{
+    background-color: brown;
+}
+.main-g img{
+    opacity: 0.5;
+    border-style: solid;
+    border-color: black;
+    height: 200px;
+}
+.main-g img:hover{
+    opacity: 1;
+    border-color: white;
+    transform: scale(1.1,1.1);
+    transition: all 1s;
+}
+div.col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+}
+div.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+div.col3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+div.col4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+div.col5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+div.col6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.hdr-contact{
+    display: grid;
+    grid-template-columns: 700px 900px;
+    grid-template-rows: 200px 100px;
+    grid-template-areas: 
+                        "logo nav"
+                        "nombre nav";
+    background-image: url(./Imagenes/Fondo\ contacto.jpg);
+    background-size: cover;
+}
+.frase2{
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    width: 500px;
+    color: khaki;
+    grid-area: frase2;
+    align-self:flex-start;
+    justify-self: center;
+}
+.logo{
+    height: 200px;
+    width: 400px;
+    padding-left: 10px;
+    padding-top: 10px;
+    grid-area: logo;
+}
+.frase{
+    width: 850px;
+    height: 200px;
+    opacity: 0.3;
+    grid-area: frase;
+}
+.nombre{
+    font-size: 75px;
+    font-family: 'Stardos Stencil', cursive;
+    grid-area: nombre;
+    align-self:flex-start;
+    justify-self: center;
+}
+.granos{
+    grid-area: granos;
+}
+/* NAV */
+nav{
+    height: 75px;
+    width: 500px;
+    background-color: rgb(77, 1, 19);
+    border-radius: 10px;
+    padding-top: 16px;
+    grid-area: nav;
+    justify-self: end;
+}
+/*Shop Online*/
+.seccion2{
+    background-color: #6b0f1a;
+    width: 100%;
+    height: 700px;
+    color: gray;
+    font-family: 'Ramaraja', serif;
+    display: grid;
+    grid-template-columns: 750px 400px 400px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "sub1 sub2 sub3"
+    "sub1 sub4 sub5";
+}
+.subsection1{
+    font-family: 'Ramaraja', serif;
+    font-size: 50px;
+    grid-area: sub1;
+    align-self:center;
+    justify-self: center;
+}
+.subsection1 li{
+    font-size: 20px;
+}
+.subsection2{
+    background-color: rgb(60, 60, 59);
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    grid-area: sub2;
+    align-self:center;
+    justify-self: center;
+}
+.subsection3{
+    background-color: rgb(60, 60, 59);
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    grid-area: sub3;
+    align-self:center;
+    justify-self: center;
+}
+.subsection4{
+    background-color: rgb(60, 60, 59);
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    grid-area: sub4;
+    align-self:center;
+    justify-self: center;
+}
+.subsection5{
+    background-color: rgb(60, 60, 59);
+    border-radius: 20px;
+    width: 350px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    grid-area: sub5;
+    align-self:center;
+    justify-self: center;
+}
+/*Productos*/
+.productos{
+    background-color: #6b0f1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.prod{
+    background-color: grey;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    display: grid;
+    padding-left: 39px;
+    grid-template-columns: 320px;
+    grid-template-rows: 400px 40px 50px 40px 50px;
+    grid-template-areas: 
+                        "img"
+                        "name"
+                        "des"
+                        "price"
+                        "button";
+}
+img{
+    grid-area: img;
+    align-self:center;
+    justify-self: center;
+    height: 380px;
+}
+name{
+    grid-area: name;
+    align-self:center;
+    justify-self: center;
+}
+des{
+    grid-area: des;
+    align-self: center;
+    justify-self: center;
+    padding-left: 20px;
+}
+price{
+    grid-area: price;
+    align-self: center;
+    justify-self: center;
+}
+.carousel{
+    width: 400px;
+}
+/*Footer*/
+footer{
+    background-color: rgb(34, 33, 33);
+    color: gray;
+    font-family: 'Ramaraja', serif;
+    height: 200px;
+    font-size: 25px;
+}
+footer img{
+    height: 45px;
+}
